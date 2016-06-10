@@ -1,0 +1,295 @@
+@font-face {
+    font-family: AkzidenzGroteskBold;
+    src: url(../fonts/AkzidenzGrotesk-Bold-2.otf);
+}
+
+@font-face {
+    font-family: AkzidenzGroteskRegular;
+    src: url(../fonts/AkzidenzGrotesk-Regular-2.otf);
+}
+
+@font-face {
+    font-family: AleoBold;
+    src: url(../fonts/Aleo-Bold-2.otf);
+}
+
+@font-face {
+    font-family: AleoItalic;
+    src: url(../fonts/Aleo-Italic-2.otf);
+}
+
+@font-face {
+    font-family: AleoRegular;
+    src: url(../fonts/Aleo-Regular-2.otf);
+}
+
+body {
+    font-size: 16px;
+    font-family: AleoRegular;
+    color: #111;
+}
+
+.row {
+    margin: 0;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.jumbotron {
+    height: 90vh;
+    position: relative;
+    background-color: transparent;
+    margin-bottom: 50px;
+}
+.jumbotron span {
+    display: block;
+    text-align: right;
+}
+
+.jumbotron h1 {
+    font-size: 3.2em;
+    position: absolute;
+    right: 10%;
+}
+
+.jumbotron p {
+    font-family: AkzidenzGroteskRegular;
+    font-size: 1.5em;
+    position: absolute;
+    top: 85%;
+    right: 10%;
+}
+
+.highlight {
+    color: #306bc1;
+}
+
+.challenge-cta {
+    position: relative;
+    background: url("../img/homepage-background-05.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    height: 85vh;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.challenge-cta span {
+    display: block;
+}
+
+.challenge-cta h1 {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-40%);
+    font-size: 3.2em;
+    width: 100%;
+}
+
+.leader {
+    padding-bottom: 70px;
+    padding-top: 50px;
+   
+}
+
+.leader h3 {
+     font-size: 2em;
+}
+
+.leader span {
+    display: block;
+}
+
+.features {
+    padding-bottom: 50px;
+    padding-left: 8%;
+}
+
+.features h4 {
+    font-size: 5.4em;
+}
+
+.features .train {
+    padding-left: 10%;
+}
+
+.features .enable {
+    padding-left: 18%;
+}
+
+.features .deploy {
+    padding-left: 30%;
+}
+
+.features .feature-text {
+    padding-top: 30px;
+}
+
+.features .train .feature-text {
+    margin-left: -20px;
+}
+.train img {
+    margin-top: 20px;
+    margin-left: -40px;
+}
+
+.features .enable .feature-text {
+    margin-left: 50px;
+}
+
+.enable img {
+    margin-left: -80px;
+    margin-top: 15px;
+}
+
+.features .deploy .feature-text {
+    margin-left: 105px;
+}
+
+.deploy {
+    position: relative
+}
+
+.deploy img {
+    position: absolute;
+    bottom: -115%;
+    right: 30%;
+}
+
+.features p {
+    font-size: 1em;
+    font-family: AkzidenzGroteskRegular;
+}
+
+.connect {
+    padding-left: 14%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.features .connect h4 {
+    font-size: 4.12em;
+}
+
+.connect img {
+    position: absolute;
+    left: 5%;
+    top: -155%;
+}
+
+.about {
+    position: relative;
+    background: url("../img/homepage-background-10.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    height: 95vh;
+    margin-bottom: 0;
+    padding-top: 50px;
+}
+
+.about .container {
+    /*padding-left: 5%;*/
+    /*padding-right: 5%;*/
+}
+
+.about span {
+    display: block;
+    
+}
+
+.about p {
+    font-size: 1.85em;
+}
+
+.about .highlight {
+    font-size: .9em;
+}
+
+.about h5 {
+    font-size: 2.85em;
+    display: inline;
+}
+
+.about .sections {
+    margin-top: 50px;
+}
+
+.about .col-md-6 {
+    background-color: #fff;
+    width: 49%;
+}
+
+.about .startups {
+    margin-right: 15px;
+}
+
+.about .angels {
+    float: right;
+}
+
+.startups span,
+.angels span {
+    display: inline !important;
+    color: #306bc1;
+}
+
+.startups,
+.angels {
+    text-align: right;
+    height: 300px;
+    padding: 30px 40px;
+}
+
+.startups p,
+.angels p {
+    font-size: 1.2em;
+    font-family: AkzidenzGroteskRegular;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.angels p {
+    margin-bottom: 60px;
+}
+
+.investments {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.investments h5 {
+    font-size: 2.85em;
+    margin-bottom: 50px;
+}
+
+.roi {
+    position: relative;
+    background: url("../img/homepage-background-17.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    height: 95vh;
+    margin-bottom: 0;
+    padding-top: 50px;
+    color: #fff;
+}
+
+.roi p {
+    font-size: 1.5em;
+}
+
+.contact {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.contact h5 {
+    font-size: 3.6em;
+    text-align: center;
+}

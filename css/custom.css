@@ -609,6 +609,13 @@ footer .col-md-7 {
   left: 50%;
 }
 
+@media screen and (max-width: 1150px) {
+    .investments img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 1115px) {
     .jumbotron h1 {
         top: 0;
@@ -659,16 +666,28 @@ footer .col-md-7 {
     .connect img {
         display: none;
     }
+    .train .fa-plus {
+        left: 200px;
+    }
+    .enable .fa-plus {
+        left: 30%;
+    }
+    .deploy .fa-plus {
+        left: 48%;
+    }
     .about {
         height: auto;
     }
     .about .startups,
     .about .angels {
         width: 100%;
+        height: auto;
         margin-bottom: 20px;
+        text-align: center;
     }
     form {
         width: 100%;
+        margin-left: 0;
     }
     .waveImg {
         top: -60%;
@@ -699,6 +718,12 @@ footer .col-md-7 {
         display: block;
         margin-top: 10px;
     }
+    footer .container {
+        width: 100%;
+    }
+    .waveImg {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 785px) {
@@ -722,6 +747,28 @@ footer .col-md-7 {
     }
 }
 
+@media screen and (max-width: 775px) {
+    .enable .fa-plus {
+        left: 45%;
+    }
+    .deploy .fa-plus {
+        left: 65%;
+    }
+    .navbar-default .navbar-nav>li>a {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .enable .fa-plus {
+        left: 60%;
+    }
+    .deploy .fa-plus {
+        left: 75%;
+        bottom: -35px;
+    }
+}
+
 @media screen and (max-width: 475px) {
     .jumbotron p {
         top: 65%;
@@ -735,6 +782,10 @@ footer .col-md-7 {
 }
 
 @media screen and (max-width: 400px) {
+    .jumbotron {
+        height: 120vh;
+    }
+    
     .features .train .feature-text,
     .features .enable .feature-text,
     .features .deploy .feature-text,
@@ -769,6 +820,22 @@ footer .col-md-7 {
     }
     .roi img {
         width: 100%;
+    }
+    .fa-plus {
+        bottom: -30%;
+    
+    }
+    .enable .fa-plus {
+        left: 45%;
+    }
+    .train .fa-plus {
+        left: 6%;
+    }
+    .deploy .fa-plus {
+        left: 45%;
+    }
+    .enable, .deploy {
+        margin-top: 20px;
     }
 }
 

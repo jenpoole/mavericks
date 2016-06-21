@@ -50,7 +50,8 @@ body {
     border: none;
 }
 
-.mav-logo {
+.nav-logo {
+    z-index: 20;
     position: absolute;
     top: 0;
 }
@@ -315,6 +316,14 @@ body {
     margin-top: 25px;
 }
 
+.roi .color-icon,
+.investments .color-icon {
+    display: none;
+}
+.display-icon {
+    /*display: block;*/
+}
+
 .roi {
     position: relative;
     background: url("../img/homepage-background-17.jpg") center center no-repeat;
@@ -393,7 +402,11 @@ footer .col-md-4 {
 footer .col-md-7 {
     position: absolute;
     left: 40%;
-    top: 30%;
+    top: 20%;
+}
+
+.footer-logo {
+    height: 180px;
 }
 
 
@@ -440,7 +453,9 @@ footer .col-md-7 {
 .waveImg {
     position: absolute;
     top: -90%;
-    left: -1%; 
+    left: -1%;
+    z-index: -10;
+    /*height: 100%;*/
 }
 
 .social {
@@ -480,6 +495,8 @@ footer .col-md-7 {
     height: 0!important;
     padding-bottom: 0;
     overflow: hidden!important;
+    position: absolute;
+    top: 0;
 }
 .navbar-toggle.collapsed{
     display:block!important;    
@@ -507,6 +524,8 @@ footer .col-md-7 {
     font-size: 3em;
     padding-top: 20px;
     border-color: transparent;
+    text-align: right;
+    padding-right: 40%;
 }
 
 .navbar-nav {
@@ -520,17 +539,20 @@ footer .col-md-7 {
     background-color: #306bc1;
     color: #111;
 }
-
+.navbar-collapse.collapse,
 .navbar-collapse.collapse.in {
     position: absolute;
-    top: 130px;
+    /*top: 0px;*/
     width: 100%;
     background-color: #306bc1;
     border-color: transparent;
+    height: 100vh !important;
+    padding-top: 10%;
 }
 
 
 #nav-icon3 {
+    z-index: 20;
   width: 60px;
   height: 45px;
   position: relative;
@@ -600,7 +622,7 @@ footer .col-md-7 {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   /*background-color: #fff;*/
-  background-color: #306bc1;
+  background-color: #fff;
 }
 
 #nav-icon3.open span:nth-child(4) {

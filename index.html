@@ -14,7 +14,7 @@
     
     <nav class="navbar navbar-default">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#"><img class="mav-logo" src="img/icons/icons-03.png" alt="mavericks logo"></img></a>
+        <a class="navbar-brand" href="#"><img class="nav-logo" src="img/icons/icons-03.png" alt="mavericks logo"></img></a>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" id="nav-icon3">
           <span></span>
           <span></span>
@@ -107,15 +107,36 @@
             <h5 class="text-right">Past <span class="highlight">Investments</span>.</h5>
             
             <div class="row">
-                <div class="col-sm-4"><img src="img/icons/icons-11.png" alt=""></img></div>
-                <div class="col-sm-4"><img src="img/icons/icons-12.png" alt=""></img></div>
-                <div class="col-sm-4" style="padding-right: 0;"><img src="img/icons/icons-13.png" alt=""></img></div>
+                <div class="col-sm-4">
+                    <img class="bw-icon" src="img/icons/icons-11.png" alt=""></img>
+                    <img class="color-icon" style="position: absolute; left: 12px; top: -18px; height: 145px;" src="img/icons/icons-11-color.png" alt=""></img>
+                </div>
+                <div class="col-sm-4">
+                    <img class="bw-icon" src="img/icons/icons-12.png" alt=""></img>
+                    <img class="color-icon" src="img/icons/icons-12-color.png" alt=""></img>
+                </div>
+                
+                <div class="col-sm-4" style="padding-right: 0;">
+                    <img class="bw-icon" src="img/icons/icons-13.png" alt=""></img>
+                    <img class="color-icon" style="height: 200px; position: absolute; top: -20px;" src="img/icons/icons-13-color.png" alt=""></img>
+                </div>
             </div>
             
             <div class="row">
-                <div class="col-sm-4"><img src="img/icons/icons-16.png" alt=""></img></div>
-                <div class="col-sm-4"><img src="img/icons/icons-15.png" alt=""></img></div>
-                <div class="col-sm-4" style="padding-right: 0; padding-left: 38px;"><img src="img/icons/icons-14.png" alt=""></img></div>
+                <div class="col-sm-4">
+                    <img class="bw-icon" src="img/icons/icons-16.png" alt=""></img>
+                    <img class="color-icon" style="position: absolute; top:0; left: 6%; height: 150px;" src="img/icons/icons-16-color.png" alt=""></img>
+                </div>
+                
+                <div class="col-sm-4">
+                    <img class="bw-icon" src="img/icons/icons-15.png" alt=""></img>
+                    <img class="color-icon" src="img/icons/icons-15-color.png" alt=""></img>
+                </div>
+                
+                <div class="col-sm-4" style="padding-right: 0; padding-left: 38px;">
+                    <img class="bw-icon" src="img/icons/icons-14.png" alt=""></img>
+                    <img class="color-icon" style="height: 180px;" src="img/icons/icons-14-color.png" alt=""></img>
+                </div>
             </div>
         </div>
     </div>
@@ -123,7 +144,8 @@
     <div class="row roi">
         <div class="container">
             <p class="text-right">We offer our members and entrepreneurs a <br> <span class="highlight">Return Of Involvement (ROI)</span> beyond the economical return:</p>
-            <img src="img/icons/icons-18.png" alt=""></img>
+            <img class="bw-icon"  src="img/icons/icons-18.png" alt=""></img>
+            <img class="color-icon" style="position: absolute; left: 28%;" src="img/icons/icons-18-white.png" alt=""></img>
         </div>
     </div>
     
@@ -182,8 +204,7 @@
                 </p>
             </div>
             <div class="col-md-7">
-                <img class="footer-logo" src="img/icons/icons-03.png" alt="mavericks logo"></img>
-                <p>(white logo here)</p>
+                <img class="footer-logo" src="img/icons/icons-03-white.png" alt="mavericks logo"></img>
             </div>
         </div>
     </footer>
@@ -203,6 +224,15 @@
         // 		$('.navbar-header').css("background-color", "#306bc1");
         // 	});
         	
+        	$('.investments img').hover(function(){
+        		$('.investments .color-icon').css("display", "block");
+        		$('.investments .bw-icon').css("display", "none");
+        	});
+        	
+        	$('.roi img').hover(function(){
+        		$('.roi .color-icon').css("display", "block");
+        		$('.roi .bw-icon').css("display", "none");
+        	});
         });
     </script>
 </body>
